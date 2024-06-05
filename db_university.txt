@@ -1,0 +1,56 @@
+use db_university;
+
+select *
+from teachers t ;
+
+
+select head_of_department
+from departments d ;
+
+select name 
+from courses c ;
+
+select *
+from students s 
+where name = "marco";
+
+select *
+from courses c 
+where cfu >= 12;
+
+select *
+from courses c 
+where cfu > 10
+or cfu < 5;
+
+
+select name 
+from courses c 
+where period = "I semestre"
+and `year` = 1;
+
+select *
+from courses c 
+where website is NULL ;
+
+select *
+from teachers t 
+where phone is not null;
+
+select count(*) 
+from teachers t 
+where phone is NULL;
+
+select name 
+from students s 
+where s.name like 'E%';
+
+
+select *
+from students s 
+where date_of_birth >= "1990-01-01"
+and date_of_birth <= "1990-12-31" ;
+
+select *
+from courses c 
+where cfu > 10;
